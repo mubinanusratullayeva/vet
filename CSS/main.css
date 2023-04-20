@@ -175,6 +175,7 @@ body {
 }
 
 header {
+  padding-bottom: 40px;
   background-image: url(../images/heropets.png);
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -239,6 +240,36 @@ header .hero__btn:hover {
   cursor: pointer;
   border: none;
   transition: all linear 0.3s;
+}
+
+.decoration {
+  text-align: center;
+  padding-top: 58px;
+  padding-bottom: 81px;
+  background-image: url(../images/qt1.png), url(../images/q1.png);
+  background-repeat: no-repeat;
+  background-position-x: 131px, 1071px;
+  background-position-y: 64px, 169px;
+  min-width: 1134px;
+}
+.decoration__line {
+  margin: 0 auto;
+  max-width: 140px;
+  border: 1px solid #DBDBDB;
+}
+.decoration__text {
+  margin: 43px auto 36px auto;
+  max-width: 753px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+.decoration__subtitle {
+  margin-top: 35px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
 }
 
 /*# sourceMappingURL=main.css.map */

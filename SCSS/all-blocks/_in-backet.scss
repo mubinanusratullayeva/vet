@@ -1,0 +1,32 @@
+@use'../mixins';
+@use'../variables';
+
+.decoration{
+    text-align: center;
+    padding-top: 58px;
+    padding-bottom: 81px;
+    background-image: url(../images/qt1.png), url(../images/q1.png);
+    background-repeat: no-repeat;
+    background-position-x: 131px, 1071px;
+    background-position-y: 64px, 169px;
+    min-width: 1134px;
+    &__line{
+        margin: 0 auto;
+        max-width: 140px;
+        border: 1px solid #DBDBDB;
+    }
+    &__text{
+        margin: 43px auto 36px auto;
+        max-width: 753px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    &__subtitle{
+        margin-top: 35px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: variables.$primary-color;
+    }
+}
