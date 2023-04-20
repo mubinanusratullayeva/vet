@@ -1,0 +1,68 @@
+@use'../mixins';
+@use'../variables';
+
+.goldenFish{
+    @include mixins.flexbox();
+    background-image: url(../images/feedback-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    min-height: 624px;
+    background-color: variables.$primary-color;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+     only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx){
+            background-image: url(../images/feedback-bg@2x.png);
+            background-repeat: no-repeat;
+            background-position-x: right;
+        }
+        .container{
+            margin: 62px 0 0 70px;
+        }
+        iframe{
+            min-width: 400px;
+            min-height: 652px;
+        }
+    &__title{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 62px;
+        color: variables.$thirdly-color;
+    }
+    &__text{
+        margin: 14px 0 29px 0;
+        max-width: 350px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__validator{
+        @include mixins.flexbox(flex-start, flex-start, column);
+        row-gap: 14px;
+        &-inp{
+            padding: 16px 0 13px 22px;
+            min-width: 375px;
+            min-height: 50px;
+            background-color: variables.$thirdly-color;
+            outline: none;
+            border: none;
+        }
+        textarea{
+            padding: 17px 0 0 22px;
+            min-width: 375px;
+            min-height: 165px;
+            outline: none;
+        }
+    }
+    &__btn{
+        @include mixins.btn(226px, variables.$main-color, 15px 49px, variables.$thirdly-color);
+    }
+    &__btn:hover{
+        @include mixins.btn(226px, variables.$primary-color, 15px 49px, variables.$main-color);
+    }
+    &__btn:active{
+       opacity: 0.5;
+    }
+}

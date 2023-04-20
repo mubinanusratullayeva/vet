@@ -1,0 +1,59 @@
+@use'../mixins';
+@use'../variables';
+
+.cobachka{
+    padding: 90px 0 88px 80px;
+    min-height: 481px;
+    background-image: url(../images/bd.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+     only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx){
+            background-image: url(../images/bd2x.png);
+            background-repeat: no-repeat;
+        }
+    &__title{
+        margin-top: 90px;
+        margin-left: 222px;
+        margin-bottom: 32px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: variables.$thirdly-color;
+    }
+    &__em{
+        margin-left: 222px;
+        @include mixins.flexbox(center);
+        column-gap: 21px;
+        &-gm{
+            padding: 18px 0 12px 22px;
+            min-width: 335px;
+            min-height: 50px;
+            background-color: variables.$thirdly-color;
+            border-radius: 5px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: variables.$text-color;
+            border: none;
+            outline: none;
+        }
+        &-btn{
+            @include mixins.btn(188px, variables.$primary-color, 14px 53px, variables.$thirdly-color);
+        }
+        &-btn:hover{
+            @include mixins.btn(188px, variables.$primary-color, 14px 53px, variables.$main-color);
+        }
+        &-btn:active{
+            opacity: 0.5;
+        }
+    }
+}
