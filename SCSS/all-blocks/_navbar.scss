@@ -19,13 +19,24 @@
                 color:  variables.$primary-color;
                 @include mixins.flexbox();
                  column-gap: 17px;
-                // span:nth-child(2)::before{
-                //     display: block;
-                //     width: 4px;
-                //     height: 4px;
-                //     border-radius: 50%;
-                //     background-color: variables.$main-color;
-                // }
+                 span:nth-child(2)::before{
+                    content: '';
+                    margin-right: 9px;
+                    display: inline-block;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background-color: variables.$main-color;
+                }   
+                span:nth-child(2)::after{
+                    content: '';
+                    margin-left: 9px;
+                    display: inline-block;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background-color: variables.$main-color;
+                }
             }
         }
         &-list svg{

@@ -1,0 +1,49 @@
+@use'../mixins';
+@use'../variables';
+
+header{
+    background-image: url(../images/heropets.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position-y: -100px;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+     only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx){
+            background-image: url(../images/heropets2x.png);
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+        .container{
+            @include mixins.flexbox(flex-end, flex-end);
+            padding-top: 153px;
+            padding-right: 60px;
+        }
+    .hero{
+          &__title{
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 64px;
+            max-width: 608px;
+            color: variables.$primary-color;
+            &-blue{
+                color: variables.$sky-color;
+            }
+          }
+          &__text{
+            margin: 29px 0 38px 0;
+            max-width: 495px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+          }
+          &__btn{
+            @include mixins.btn(181px, variables.$primary-color, 15px 48px, variables.$thirdly-color);
+          }
+          &__btn:hover{
+            @include mixins.btn(181px, variables.$main-color, 15px 48px, variables.$primary-color);
+          }
+    }
+}
