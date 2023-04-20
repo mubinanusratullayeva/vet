@@ -1,0 +1,48 @@
+@use'../mixins';
+@use'../variables';
+
+.navbar{
+    .container{
+      @include mixins.flexbox(center, flex-end);
+    }
+    &__menu{
+        @include mixins.flexbox(center, space-between);
+        min-width: 85%;
+        &-list{
+        padding: 14px 0 10px 0;
+        @include mixins.flexbox();
+        cursor: pointer;
+            &--link{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                color:  variables.$primary-color;
+                @include mixins.flexbox();
+                 column-gap: 17px;
+                // span:nth-child(2)::before{
+                //     display: block;
+                //     width: 4px;
+                //     height: 4px;
+                //     border-radius: 50%;
+                //     background-color: variables.$main-color;
+                // }
+            }
+        }
+        &-list svg{
+            margin-right: 9px;
+            fill: variables.$main-color;
+        }
+        &-list:hover{
+            .navbar__menu-list--link{
+                transition: all linear 0.2s;
+                color: variables.$main-color;
+            }
+        }
+        &-list:active{
+            .navbar__menu-list--link{
+                color:  variables.$primary-color;
+                opacity: 0.6;
+            }
+        }
+    }
+}

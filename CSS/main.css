@@ -27,4 +27,129 @@ body {
   margin: 0 auto;
 }
 
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: default;
+}
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+  min-width: 85%;
+}
+.navbar__menu-list {
+  padding: 14px 0 10px 0;
+  display: flex;
+  align-items: default;
+  justify-content: default;
+  flex-direction: default;
+  cursor: pointer;
+}
+.navbar__menu-list--link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  display: flex;
+  align-items: default;
+  justify-content: default;
+  flex-direction: default;
+  column-gap: 17px;
+}
+.navbar__menu-list svg {
+  margin-right: 9px;
+  fill: #FFBD54;
+}
+.navbar__menu-list:hover .navbar__menu-list--link {
+  transition: all linear 0.2s;
+  color: #FFBD54;
+}
+.navbar__menu-list:active .navbar__menu-list--link {
+  color: #333333;
+  opacity: 0.6;
+}
+
+.navburger {
+  background-color: #ffffff;
+}
+.navburger .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: default;
+}
+.navburger .container svg {
+  position: absolute;
+  left: 0;
+  top: -19px;
+  cursor: pointer;
+}
+.navburger .container svg:hover {
+  transition: all ease-out 0.1s;
+  opacity: 0.8;
+}
+.navburger .container svg:active {
+  opacity: 0.6;
+}
+.navburger__flexbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+  min-width: 77%;
+}
+.navburger__flexbox-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+  min-width: 67%;
+}
+.navburger__flexbox-menu--fish {
+  visibility: hidden;
+}
+.navburger__flexbox-menu--list:hover .navburger__flexbox-menu--fish {
+  visibility: visible;
+}
+.navburger__flexbox-menu--list {
+  padding: 20px 0;
+  cursor: pointer;
+}
+.navburger__flexbox-menu--link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+.navburger__flexbox-menu--list:hover .navburger__flexbox-menu--link {
+  color: #FFBD54;
+}
+.navburger__flexbox-btn {
+  display: flex;
+  align-items: center;
+  justify-content: default;
+  flex-direction: default;
+  column-gap: 4.68px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  border: none;
+  cursor: pointer;
+}
+.navburger__flexbox-btn:hover {
+  transition: 0.2s;
+  color: #FFBD54;
+}
+.navburger__flexbox-btn:active {
+  transition: 0.2s;
+  color: #949494;
+  opacity: 0.6;
+}
+
 /*# sourceMappingURL=main.css.map */

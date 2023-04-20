@@ -1,0 +1,71 @@
+@use'../mixins';
+@use'../variables';
+
+.navburger{
+    background-color: variables.$thirdly-color;
+    .container{
+        position: relative;
+        @include mixins.flexbox(center, flex-end);
+        svg{
+            position: absolute;
+            left: 0;
+            top: -19px;
+            cursor: pointer;
+        }
+        svg:hover{
+            transition: all ease-out 0.1s;
+            opacity: 0.8;
+        }
+        
+        svg:active{
+            opacity: 0.6;
+        }
+    }
+    &__flexbox{
+        position: relative;
+        @include mixins.flexbox(center, space-between);
+        min-width: 77%;
+        &-menu{
+            @include mixins.flexbox(center, space-between);
+            min-width: 67%;
+            &--fish{
+                visibility: hidden;
+            }
+            &--list:hover &--fish{
+            visibility: visible;
+            }
+            &--list{
+                padding: 20px 0;
+                cursor: pointer;
+            }
+            &--link{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 21px;
+                color: variables.$primary-color
+            }
+            &--list:hover &--link{
+                color: variables.$main-color;
+            }
+        }
+        &-btn{
+            @include mixins.flexbox(center);
+            column-gap: 4.68px;
+            background-color: transparent;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+            border: none;
+            cursor: pointer;
+        }
+        &-btn:hover{
+            transition: 0.2s;
+            color: variables.$main-color;
+        }
+        &-btn:active{
+            transition: 0.2s;
+            color: variables.$text-color;
+            opacity: 0.6;
+        }
+    }
+}
