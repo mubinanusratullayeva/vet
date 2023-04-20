@@ -132,12 +132,6 @@ body {
   flex-direction: default;
   min-width: 67%;
 }
-.navburger__flexbox-menu--fish {
-  visibility: hidden;
-}
-.navburger__flexbox-menu--list:hover .navburger__flexbox-menu--fish {
-  visibility: visible;
-}
 .navburger__flexbox-menu--list {
   padding: 20px 0;
   cursor: pointer;
@@ -733,6 +727,54 @@ header .hero__btn:hover {
 }
 .goldenFish__btn:active {
   opacity: 0.5;
+}
+
+footer {
+  padding: 60px 0 23px;
+  background-color: #F3F3F3;
+  border: 1px solid #EBEBEB;
+}
+footer .hero-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: default;
+}
+footer .hero-footer__flexbox-menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+footer .hero-footer__flexbox-menu--link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+footer .hero-footer__flexbox-menu--link:hover {
+  color: #FFBD54;
+}
+footer .hero-footer__flexbox-menu--list {
+  padding-bottom: 14px;
+}
+footer .hero-footer .navbar__menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: default;
+  min-width: 51%;
+}
+footer .hero-footer .navbar__menu-list {
+  display: flex;
+  align-items: default;
+  justify-content: default;
+  flex-direction: default;
+}
+footer .hero-footer .navbar__menu-list--link {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 148px;
 }
 
 /*# sourceMappingURL=main.css.map */

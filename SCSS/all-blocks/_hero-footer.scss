@@ -1,0 +1,38 @@
+@use'../mixins';
+@use'../variables';
+
+footer{
+    padding: 60px 0 23px;
+    background-color: #F3F3F3;
+    border: 1px solid #EBEBEB;
+    .hero-footer{
+        @include mixins.flexbox(flex-start, space-between);
+        &__flexbox-menu{
+            @include mixins.flexbox(flex-start, flex-start, column);
+            &--link{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 21px;
+                color: variables.$primary-color;
+            }
+            &--link:hover{
+                color: variables.$main-color;
+            }
+            &--list{
+                padding-bottom: 14px; 
+            }
+        }
+        .navbar__menu{
+            @include mixins.flexbox(flex-start, space-between);
+            min-width: 51%;
+            &-list{
+                @include mixins.flexbox();
+                &--link{
+                    display: flex;
+                    flex-wrap: wrap;
+                    max-width: 148px;
+                }
+            }
+        }
+    }
+}

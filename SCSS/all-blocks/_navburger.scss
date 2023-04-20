@@ -28,12 +28,12 @@
         &-menu{
             @include mixins.flexbox(center, space-between);
             min-width: 67%;
-            &--fish{
-                visibility: hidden;
-            }
-            &--list:hover &--fish{
-            visibility: visible;
-            }
+            // &--fish{
+            //     // visibility: hidden;
+            // }
+            // &--list:hover &--fish{
+            // visibility: visible;
+            // }
             &--list{
                 padding: 20px 0;
                 cursor: pointer;
