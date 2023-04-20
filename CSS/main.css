@@ -1,7 +1,30 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FuturaPT-Medium.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Futura PT";
+  color: #949494;
+  background-color: #e5e5e5;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  body {
+    background-image: url(../images/body-bg2x.png);
+  }
+}
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
