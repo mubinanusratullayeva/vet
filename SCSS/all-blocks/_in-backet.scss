@@ -10,6 +10,17 @@
     background-position-x: 131px, 1071px;
     background-position-y: 64px, 169px;
     min-width: 1134px;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+   only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+     only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+       only screen and (min-resolution: 2dppx){
+        background-image: url(../images/qt2x.png), url(../images/q2x.png);
+        background-repeat: no-repeat;
+        background-position-x: 131px, 1071px;
+        background-position-y: 64px, 169px;
+       }
     &__line{
         margin: 0 auto;
         max-width: 140px;

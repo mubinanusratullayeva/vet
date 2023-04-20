@@ -252,6 +252,14 @@ header .hero__btn:hover {
   background-position-y: 64px, 169px;
   min-width: 1134px;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .decoration {
+    background-image: url(../images/qt2x.png), url(../images/q2x.png);
+    background-repeat: no-repeat;
+    background-position-x: 131px, 1071px;
+    background-position-y: 64px, 169px;
+  }
+}
 .decoration__line {
   margin: 0 auto;
   max-width: 140px;
@@ -270,6 +278,168 @@ header .hero__btn:hover {
   font-size: 20px;
   line-height: 26px;
   color: #333333;
+}
+
+.cats__title {
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  text-align: center;
+  color: #333333;
+}
+.cats__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+  max-width: 100%;
+}
+.cats__cards-item {
+  padding: 30px 32px 42px 35px;
+  min-width: 193px;
+  background-color: #ffffff;
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.cats__cards-item--title {
+  margin-top: 21px;
+  max-width: 126px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.cats__cards-item:hover {
+  transition: 0.3s;
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+.cats__cards-item:active {
+  opacity: 0.5;
+}
+.cats__cat {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 8px;
+  padding: 41px 105px 0 0;
+  min-width: 1223px;
+  background-color: #ffffff;
+  border-radius: 0px 5px 5px 5px;
+  background-image: url(../images/MaskGroup.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 414px;
+  background-position-y: center;
+  background-position-x: 32px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .cats__cat {
+    background-image: url(../images/MaskGroup@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.cats__cat .deco__title {
+  margin-bottom: 9px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 20px;
+  color: #333333;
+}
+.cats__cat .deco__text {
+  margin-top: 9px;
+  max-width: 492px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.cats__cat .deco .btnsf {
+  display: flex;
+  align-items: center;
+  justify-content: default;
+  flex-direction: default;
+  column-gap: 21px;
+}
+.cats__cat .deco__btnf {
+  min-width: 185px;
+  background-color: #FFBD54;
+  padding: 14px 35px;
+  color: #ffffff;
+  border-radius: 3px;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  cursor: pointer;
+  border: none;
+  transition: all linear 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: default;
+  flex-direction: default;
+  column-gap: 6px;
+  margin-top: 34px;
+}
+.cats__cat .deco__btnf:hover {
+  min-width: 185px;
+  background-color: #333333;
+  padding: 14px 35px;
+  color: #FFBD54;
+  border-radius: 3px;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  cursor: pointer;
+  border: none;
+  transition: all linear 0.3s;
+}
+.cats__cat .deco__btnf:active {
+  opacity: 0.6;
+}
+.cats__cat .deco__btns {
+  min-width: 241px;
+  background-color: #333333;
+  padding: 14px 37px;
+  color: #ffffff;
+  border-radius: 3px;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  cursor: pointer;
+  border: none;
+  transition: all linear 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: default;
+  flex-direction: default;
+  column-gap: 6px;
+  margin-top: 34px;
+}
+.cats__cat .deco__btns:hover {
+  min-width: 241px;
+  background-color: #333333;
+  padding: 14px 37px;
+  color: #FFBD54;
+  border-radius: 3px;
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  cursor: pointer;
+  border: none;
+  transition: all linear 0.3s;
+}
+.cats__cat .deco__btns:active {
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=main.css.map */
